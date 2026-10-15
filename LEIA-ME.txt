@@ -1,0 +1,22 @@
+THE KINGS — site inicial
+========================
+
+Arquivos
+- index.html: estrutura e textos
+- style.css: identidade visual, layout responsivo e animações
+- script.js: menu mobile e ano automático
+
+Como visualizar
+1. Extraia the-kings-site.zip.
+2. Abra a pasta e clique duas vezes em index.html.
+3. Para editar, abra os arquivos em um editor como Visual Studio Code.
+
+Antes de publicar
+- Troque contato@thekings.example pelo e-mail real.
+- Adicione os links oficiais de YouTube, Spotify, Instagram e outras plataformas.
+- Atualize datas, integrantes, biografia e status dos lançamentos.
+- Substitua as artes provisórias por capas e fotografias oficiais da banda.
+- As fontes carregam do Google Fonts; se estiver offline, o site usa fontes alternativas.
+
+Publicação gratuita
+Uma opção simples é GitHub Pages: crie um repositório no GitHub, envie os três arquivos e ative Pages nas configurações do repositório. O site não precisa de backend para esta primeira versão.

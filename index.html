@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#201a17">
+  <meta name="description" content="The Kings — The Heart of Music.">
+  <title>The Kings — The Heart of Music</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<style>
+.hero-art {
+  padding: 0 !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  overflow: hidden;
+}
+.hero-art img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+.music-feature {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+  gap: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  overflow: hidden;
+  align-items: stretch;
+}
+.music-feature > .music-cover,
+.music-feature > img.music-cover,
+.music-feature > img.cover-love {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  aspect-ratio: 1 / 1 !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  outline: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+.music-feature > .music-info {
+  min-width: 0;
+  padding: clamp(20px, 4vw, 48px);
+}
+@media (max-width: 700px) {
+  .music-feature {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+  .music-feature > .music-cover,
+  .music-feature > img.music-cover,
+  .music-feature > img.cover-love {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1 !important;
+  }
+}
+
+.release-art {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+img.release-art {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+.release-card {
+  min-width: 0;
+}
+
+.release-grid {
+  align-items: start;
+}
+
+</style>
+
+<body class="sixties-theme">
+  <header class="site-header">
+    <a class="header-logo-link" href="#start" aria-label="The Kings — Start"><img class="wordmark header-logo" src="the-kings-2.jpg" alt="The Kings - Music Band"></img></a>
+    <button class="theme-toggle" id="light-theme-toggle" type="button" aria-pressed="Alternar tema">🌞</button>
+    <button class="theme-toggle" id="dark-theme-toggle" type="button" aria-label="Alternar tema">🌙</button>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="navigation" aria-label="Navegação principal">
+      <a href="#album">Album</a><a href="#about">Band</a><a href="#releases">Releases</a><a href="#contact" class="nav-contact">Contact ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="start">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> IT'S ALL ABOUT LOVE</p>
+        <h1><i>THE</i> <em>KINGS</em></h1>
+        <p class="hero-text">True music is that which is expressed by a heart, whether joyful or broken. ❤️✨🕺💃</p>
+        <div class="hero-actions"><a class="button button-dark" href="#album">Access Now<span>↘</span></a><a class="text-link" href="#about">About us <span>→</span></a></div>
+        <div class="hero-note"><span class="note-star">✳</span><span>IT WAS LOVE AT<br>FIRST SIGHT.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Capa do álbum True Love">
+        <img src="the-kings.jpg" alt="Capa do álbum True Love">
+      </div>
+    </section>
+
+    <div class="ticker" aria-label="Identidade musical"><div>POP <b>✳</b> ROCK <b>✳</b> SOUL <b>✳</b> R&B <b>✳</b> COUNTRY <b>✳</b> REGGAE <b>✳</b> FUNK <b>✳</b> EDM <b>✳</b> CLASSIC <b>✳</b> POP <b>✳</b> ROCK <b>✳</b> SOUL <b>✳</b> R&B <b>✳</b> COUNTRY <b>✳</b> REGGAE <b>✳</b> FUNK <b>✳</b> EDM <b>✳</b> CLASSIC <b>✳</b></div></div>
+
+    <section class="section music-section" id="album">
+      <div class="section-heading"><div><p class="eyebrow">GET UP & GROOVE</p><h2><i>Dance with </i> <em>The Kings</em></h2></div><p class="section-intro">Come laugh, cry, dance, hurt, and above all, love!</p></div>
+      <div class="music-feature">
+        <img class="music-cover cover-love" src="true-love.jpg" alt="Capa de True Love">
+        <div class="music-info"><p class="eyebrow">FEATURED ALBUM</p><h3>True Love</h3><p>The proof of true love may lie in a long-lasting relationship, but the greatest proof of love is remaining steadfast even amidst distance, time, and any other difficulty.</p><div class="tag-list"><span>CLASSIC</span><span>COUNTRY</span><span>EDM</span><span>FUNK</span><span>POP</span><span>R&B</span><span>REGGAE</span><span>ROCK</span><span>SOUL</span></div><a class="button button-outline" href="#releases">All Songs <span>↗</span></a><p class="small-note">YouTube video links will be released soon.</p></div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-art"><div class="about-frame"><span class="frame-top">MUSIC IS FEELING</span><div class="big-quote">“</div><p>Everything comes from a broken heart.</p><span class="frame-bottom">THE KINGS</span></div></div>
+      <div class="about-copy"><p class="eyebrow">ABOUT US</p><h2>One band,<br><em>Many styles.</em></h2><p>The Kings is a Latin American band featuring Mathias de Oliveira Martins as its songwriter and lead vocalist, alongside Paulo Roberto Cardoso Fernandes as its producer. Blending a variety of musical styles, the band draws primarily from Mathias’s passion for Pop and R&B, complemented by Paulo’s influences from Hip-Hop and Rap. What sets The Kings apart is the importance it places on emotion. For the band, creating beautiful music is only the beginning — true expression comes from feeling every note, every word, and every melody. Because music is not just meant to be heard; it is meant to be felt.</p><a class="text-link" href="#contact">Contact Us <span>→</span></a></div>
+    </section>
+
+    <section class="section releases-section" id="releases">
+      <div class="section-heading"><div><p class="eyebrow">IN YOUR HEART</p><h2><i>Last</i> <em>releases</em></h2></div><p class="section-intro">Check out our latest music and laugh, cry, and feel it all with us!</p></div>
+      <div class="release-grid">
+        <article class="release-card"><img class="release-art release-art-one" src="discovered-love.jpg" alt="Capa de Discovered Love"></img><p class="release-type">SINGLE · POP / R&B</p><h3>Descobri o Amor</h3><p class="release-desc">When my eyes met yours.</p><a href="https://youtu.be/Mzx0QTpU6uo?is=Is4UisSN-nO-HFwi" target="_blank" rel="noopener noreferrer" aria-label="The King's YouTube"><i class="fa-brands fa-youtube"></i></a></article>
+        <article class="release-card"><img class="release-art release-art-two" src="cause-i-love-you.jpg" alt="Capa de Cause I Love You"></img><p class="release-type">SINGLE · POP ROCK</p><h3>'Cause I Love You</h3><p class="release-desc">I fell in love with your eyes.</p><span class="status">LANÇAMENTO A ADICIONAR</span></article>
+        <article class="release-card"><img class="release-art release-art-three" src="somewhere-with-you.jpg" alt="Capa de Somewhere With You"></img><p class="release-type">SINGLE · COUNTRY</p><h3>Somewhere With You</h3><p class="release-desc">I'd be with you anywhere.</p><span class="status">LANÇAMENTO A ADICIONAR</span></article>
+        <article class="release-card"><img class="release-art release-art-four" src="i-love-you.jpg" alt="Capa de I Love You"></img><p class="release-type">SINGLE · REGGAE</p><h3>I Love You</h3><p class="release-desc">You're more beautiful than the rarest eclipse.</p><span class="status">LANÇAMENTO A ADICIONAR</span></article>
+        <article class="release-card"><img class="release-art release-art-five" src="best-friend.jpg" alt="Capa de Best Friend"></img><p class="release-type">SINGLE · POP</p><h3>Best Friend</h3><p class="release-desc">You're just a great friend.</p><span class="status">LANÇAMENTO A ADICIONAR</span></article>
+        <article class="release-card"><img class="release-art release-art-six" src="i-still-miss-you.jpg" alt="Capa de I Still Miss You"></img><p class="release-type">SINGLE · POP | FUNK | SOUL</p><h3>I Still Miss You</h3><p class="release-desc">Heartache can kill a man in love.</p><span class="status">LANÇAMENTO A ADICIONAR</span></article>
+        <article class="release-card"><img class="release-art release-art-seven" src="come-back-to-me.jpg" alt="Capa de Come Back to Me"></img><p class="release-type">SINGLE · EDM</p><h3>Come Back to Me</h3><p class="release-desc">Go back to where you belong.</p><span class="status">LANÇAMENTO A ADICIONAR</span></article>
+        <article class="release-card"><img class="release-art release-art-eight" src="i-want-you.jpg" alt="Capa de I Want You"></img><p class="release-type">SINGLE · SOUL</p><h3>I Want You</h3><p class="release-desc">I need you here right now.</p><span class="status">LANÇAMENTO A ADICIONAR</span></article>
+        <article class="release-card"><img class="release-art release-art-nine" src="since-the-first-time.jpg" alt="Capa de Since the First Time"></img><p class="release-type">SINGLE · POP</p><h3>Since the First Time</h3><p class="release-desc">The fire still burns.</p><span class="status">LANÇAMENTO A ADICIONAR</span></article>
+        <article class="release-card"><img class="release-art release-art-ten" src="one-last-dance.jpg" alt="Capa de One Last Dance"></img><p class="release-type">SINGLE · CLASSIC 60'S</p><h3>One Last Dance</h3><p class="release-desc">May I have this last dance, please?</p><span class="status">LANÇAMENTO A ADICIONAR</span></article>
+        <article class="release-card"><img class="release-art release-art-eleven" src="true-love.jpg" alt="Capa de Somewhere With You"></img><p class="release-type">ALBUM</p><h3>True Love</h3><p class="release-desc">The proof of true love may lie in a long-lasting relationship, but the greatest proof of love is remaining steadfast even amidst distance, time, and any other difficulty.</p><span class="status">EM DESENVOLVIMENTO</span></article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact"><p class="eyebrow">LET'S MAKE IT HAPPEN</p><h2>Do you have an idea?<br><em>Want to get in touch with us?</em></h2><p>For shows, collaborations, resumes, or simply to say “Hi!”, send us an email by clicking the button below:</p><div class="contact-actions"><a class="button button-light" href="mailto:thekingsoficial67@gmail.com">Send e-mail <span>↗</span></a><a class="text-link light-link" href="#start">Back to top ↑</a></div></section>
+  </main>
+
+  <footer class="site-footer"><a class="wordmark footer-mark" href="#start">THE <span>KINGS</span><small>MUSIC BAND</small></a><p> IT'S ALL ABOUT LOVE.</p><div class="social-links"><a href="https://www.instagram.com/thekings_7777" target="_blank" rel="noopener noreferrer" aria-label="The Kings Instagram"><i class="fa-brands fa-instagram"></i><span>THE KINGS</span></a>
+  <a href="https://www.instagram.com/mathiaso_7" target="_blank" rel="noopener noreferrer" aria-label="Mathias Instagram"><i class="fa-brands fa-instagram"></i><span>MATHIAS</span></a>
+  <a href="https://www.instagram.com/eo_turcoor" target="_blank" rel="noopener noreferrer" aria-label="Paulo's Instagram"><i class="fa-brands fa-instagram"></i><span>PAULO</span></a>
+  <a href="https://www.youtube.com/@TheKings-zzz" target="_blank" rel="noopener noreferrer" aria-label="The King's YouTube"><i class="fa-brands fa-youtube"></i><span>THE KINGS</span></a></div>
+  <span class="copyright">© <span id="year"></span> THE KINGS</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
