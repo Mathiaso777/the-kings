@@ -459,6 +459,7 @@ body.light-theme {
 @media (max-width: 640px) {
   .navigation {
     background-color: #690101;
+    color: #FFFFFF;
   }
 
   .navigation.open {
