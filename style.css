@@ -431,9 +431,9 @@ body.light-theme {
   z-index: 1000;
   width: min (260px, 90vw);
   padding: 12px;
-  background: var(--paper, #690101);
-  color: var(--ink, #690101);
-  border: 1px solid var(--gold, #FFFFFF);
+  background: var(--red, #690101);
+  color: var(--red, #690101);
+  border: 1px solid var(--paper, #FFFFFF);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
  }
 
@@ -445,7 +445,7 @@ body.light-theme {
  }
 
  .site-header .navigation-open a + a {
-  border-top: 1px solid var(--gold, #690101);
+  border-top: 1px solid var(--red, #690101);
  }
 
  .site-header .menu-toggle {
