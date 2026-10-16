@@ -415,3 +415,43 @@ body.light-theme {
     max-height: 54px;
   }
 }
+
+@media (max-width: 700px) {
+ .site-header { position: relative;
+  }
+
+ .site-header .navigation.open {
+  display: flex !important;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 1000;
+  width: min (260px, 90vw);
+  padding: 12px;
+  background: var(--paper, #F4EBDD);
+  color: var(--ink, #30251F);
+  border: 1px solid var(--gold, #C49D66);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+ }
+
+ .site-header .navigation.open a {
+  display: block;
+  padding: 14px 12px;
+  color: inherit;
+  text-decoration: none;
+ }
+
+ .site-header .navigation-open a + a {
+  border-top: 1px solid var(--gold, #C49D66);
+ }
+
+ .site-header .menu-toggle {
+  display: block;
+  position: relative;
+  z-index: 1001;
+  cursor: pointer;
+ }
+}
