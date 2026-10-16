@@ -1,29 +1,25 @@
-const menuButton = document.querySelector(".menu-toggle");
-const navigation = document.querySelector(".navigation");
+document.addEventListener("DOMContentLoaded", () => {
+  const menuButton = document.querySelector(".menu-toggle");
+  const navigation = document.querySelector(".navigation");
 
-if (menuButton && navigation) {
+  if (!menuButton || !navigation) {
+    console.error("Botão ou navegação não encontrados.");
+    return;
+  }
+
   menuButton.addEventListener("click", () => {
     const isOpen = navigation.classList.toggle("open");
     menuButton.setAttribute("aria-expanded", String(isOpen));
     menuButton.setAttribute("aria-label", isOpen ? "Fechar menu" : "Abrir menu");
-    menuButton.textContent = isOpen ? "×" : "≡"
-  })
-}
-
-menuButton.addEventListener("click", () => {
-  const isOpen = navigation.classList.toggle("open");
-  menuButton.setAttribute("aria-expanded", String(isOpen));
-  menuButton.setAttribute("aria-label", isOpen ? "Fechar menu" : "Abrir menu");
-  menuButton.textContent = isOpen ? "×" : "☰";
-});
-
-navigation.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", () => {
-    navigation.classList.remove("open");
-    menuButton.setAttribute("aria-expanded", "false");
-    menuButton.setAttribute("aria-label", "Abrir menu");
-    menuButton.textContent = "☰";
   });
+
+  navigation.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navigation.classList.remove("open");
+      menuButton.setAttribute("aria-expanded", "false");
+      menuButton.setAttribute("aria-label", "Abrir menu");
+    });
+  })
 });
 
 const year = document.querySelector("#year");
