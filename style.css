@@ -455,3 +455,13 @@ body.light-theme {
   cursor: pointer;
  }
 }
+
+@media (max-width: 640px) {
+ .navigation {
+  background-color: #690101;
+ }
+
+ .navigation.open {
+  background-color: #690101;
+ }
+}
