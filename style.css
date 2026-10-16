@@ -473,3 +473,10 @@ body.light-theme {
     background-color: #690101 !important;
   }
 }
+
+.broken-heart-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
